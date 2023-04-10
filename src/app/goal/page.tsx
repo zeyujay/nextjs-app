@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-10 19:14:07
+ * @LastEditTime: 2023-04-10 19:24:40
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -17,10 +17,9 @@ async function Goal() {
     method: "GET",
   });
   const res = await result.json();
-  console.log(22222, res);
   return (
     <div className={styles.main}>
-      <Circle list={res.results}></Circle>;
+      <Circle list={res.data}></Circle>;
     </div>
   );
 }
