@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-10 19:24:40
+ * @LastEditTime: 2023-04-11 02:03:12
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -14,6 +14,7 @@ import React from "react";
 async function Goal() {
   console.log(1111, process.env.NODE_ENV);
   const result = await fetch("https://zeyujay.xyz:3002/test/goal", {
+    cache: "no-store",
     method: "GET",
   });
   const res = await result.json();
