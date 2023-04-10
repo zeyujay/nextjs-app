@@ -2,8 +2,8 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 16:19:52
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-10 18:01:24
- * @FilePath: /v8/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Circle.tsx
+ * @LastEditTime: 2023-04-10 18:13:37
+ * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Circle.tsx
  * @Description:
  *
  * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved.
