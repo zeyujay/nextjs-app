@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 16:19:52
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-10 17:51:49
+ * @LastEditTime: 2023-04-10 18:01:24
  * @FilePath: /v8/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Circle.tsx
  * @Description:
  *
@@ -43,8 +43,8 @@ const Circle = ({ list }: ICircle) => {
       "rgba(34,156,65,0.1)",
     ];
     if (list.length > 0) {
-      const results = list.filter(
-        (item) => item.properties.isShowCircle.checkbox === true
+      const results: any[] = list.filter(
+        (item: any) => item.properties.isShowCircle.checkbox === true
       );
       console.log(results);
       for (var i = 0; i < results.length; i++) {
