@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-11 15:55:30
+ * @LastEditTime: 2023-04-11 18:55:25
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -13,11 +13,11 @@ import Time from "./component/Time";
 import styles from "./page.module.css";
 import React from "react";
 async function Goal() {
-  const result = await fetch("https://zeyujay.xyz:3002/test/goal", {
+  const result = await fetch("http://localhost:3002/test/goal", {
     cache: "no-store",
     method: "GET",
   });
-  const res = await result.json();
+  const res = (await result?.json()) || [];
   return (
     <div className={styles.main}>
       <Circle list={res.data}></Circle>

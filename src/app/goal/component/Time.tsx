@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-11 02:55:00
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-11 15:59:48
+ * @LastEditTime: 2023-04-11 22:29:31
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Time.tsx
  * @Description:
  *
