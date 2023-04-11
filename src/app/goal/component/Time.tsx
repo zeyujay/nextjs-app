@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-11 02:55:00
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-11 15:51:26
+ * @LastEditTime: 2023-04-11 15:59:48
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Time.tsx
  * @Description:
  *
@@ -13,9 +13,9 @@
 import { useEffect, useState } from "react";
 
 const Time = () => {
-  const [hour, setHour] = useState();
-  const [min, setMin] = useState();
-  const [sec, setSec] = useState();
+  const [hour, setHour] = useState(0);
+  const [min, setMin] = useState(0);
+  const [sec, setSec] = useState(0);
   const fn = () => {
     requestAnimationFrame(() => {
       setHour(new Date().getHours());
@@ -50,7 +50,6 @@ const Time = () => {
     >
       <span style={{ fontSize: "25px" }}> {`${hour}:${min}:${sec}`}</span>
       <svg
-        t="1681155238628"
         className="icon"
         viewBox="0 0 1024 1024"
         version="1.1"
