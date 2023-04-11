@@ -3,7 +3,7 @@ const fs = require("fs");
 const nextConfig = {
   experimental: {
     appDir: true,
-    externalResolver: true,
+    serverComponents: true,
   },
   output: "standalone",
 };
