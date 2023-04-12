@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 16:19:52
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-11 23:46:06
+ * @LastEditTime: 2023-04-12 13:07:56
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Circle.tsx
  * @Description:
  *
@@ -11,7 +11,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { throttle } from "../../../utils/utils.js";
 type ICircle = {
   list: object[];
 };

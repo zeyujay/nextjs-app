@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-11 18:55:25
+ * @LastEditTime: 2023-04-12 13:05:25
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -17,6 +17,7 @@ async function Goal() {
     cache: "no-store",
     method: "GET",
   });
+
   const res = (await result?.json()) || [];
   return (
     <div className={styles.main}>
