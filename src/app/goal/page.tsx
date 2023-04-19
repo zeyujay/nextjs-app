@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-19 13:12:45
+ * @LastEditTime: 2023-04-19 13:25:30
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -22,7 +22,7 @@ async function Goal() {
     return (
       <div className={styles.main}>
         <Circle list={res.data}></Circle>
-        <Time list={res.data}></Time>
+        <Time></Time>
       </div>
     );
   } catch (error) {

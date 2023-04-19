@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-11 02:55:00
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-19 13:02:09
+ * @LastEditTime: 2023-04-19 13:25:36
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/component/Time.tsx
  * @Description:
  *
@@ -12,14 +12,12 @@
 
 import { useState } from "react";
 
-const Time = ({ list }: any) => {
-  console.log(list);
+const Time = () => {
   const [hour, setHour] = useState(0);
   const [min, setMin] = useState(0);
   const [sec, setSec] = useState(0);
   const fn = () => {
     requestAnimationFrame(() => {
-      console.log("111111");
       setHour(new Date().getHours());
       setMin(new Date().getMinutes());
       setSec(new Date().getSeconds());
