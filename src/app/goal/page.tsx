@@ -2,7 +2,7 @@
  * @Author: zeyujay zeyujay@gmail.com
  * @Date: 2023-04-10 17:36:44
  * @LastEditors: zeyujay zeyujay@gmail.com
- * @LastEditTime: 2023-04-12 13:10:14
+ * @LastEditTime: 2023-04-19 13:12:45
  * @FilePath: /note/Users/zeyu/Documents/work/next-notion/src/app/goal/page.tsx
  * @Description:
  *
@@ -13,17 +13,20 @@ import Time from "./component/Time";
 import styles from "./page.module.css";
 import React from "react";
 async function Goal() {
-  const result = await fetch("https://zeyujay.xyz:3002/test/goal", {
-    cache: "no-store",
-    method: "GET",
-  });
-
-  const res = (await result?.json()) || [];
-  return (
-    <div className={styles.main}>
-      <Circle list={res.data}></Circle>
-      <Time></Time>
-    </div>
-  );
+  try {
+    const result = await fetch("https://zeyujay.xyz:3002/test/goal", {
+      cache: "no-store",
+      method: "GET",
+    });
+    const res = await result?.json();
+    return (
+      <div className={styles.main}>
+        <Circle list={res.data}></Circle>
+        <Time list={res.data}></Time>
+      </div>
+    );
+  } catch (error) {
+    return <div>网络错误</div>;
+  }
 }
 export default Goal;
